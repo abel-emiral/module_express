@@ -3,8 +3,8 @@ const compression = require("compression");
 const cors = require("cors");
 
 const _port = process.env.PORT || 7070;
-// const _app_folder = __dirname + "/estaticos/dist/sources/apps/vdc-private-app";
-const _app_folder = __dirname;
+const _app_folder = __dirname + "/estaticos/dist/sources/apps/vdc-private-app";
+// const _app_folder = __dirname;
 
 
 
@@ -22,7 +22,7 @@ const token = isExpired
     
 app.use((req, res, next) => {
   // Insertar el token en el header de cada respuesta
-  // res.setHeader("Authorization", `Bearer ${token}`);
+  res.setHeader("Authorization", `Bearer ${token}`);
   // Continuar con el siguiente middleware
   next();
 });
