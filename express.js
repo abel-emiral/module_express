@@ -15,10 +15,8 @@ app.use(cors());
 
 //____________________________________________________________________________
 // Middleware
-const isExpired = false;
-const token = isExpired 
-      ? "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJQZWRybyIsImlhdCI6MTcwNDc5NTgwMywiZXhwIjoxNzA0Nzk1ODYzfQ.-rCPcI__9WyLLj6B1rHC0dFO5pcsv5rlQxhw9AYnj-M"
-      : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJQZWRybyIsImlhdCI6MTcwNDg2OTU4NSwiZXhwIjoyMDIwNDQ1NTg1fQ.lkmXkYkPPYA_0pw6Df6ICPN8N1mlGz60IU50ftmMJXQ";
+// const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJQZWRybyIsImlhdCI6MTcwNDc5NTgwMywiZXhwIjoxNzA0Nzk1ODYzfQ.-rCPcI__9WyLLj6B1rHC0dFO5pcsv5rlQxhw9AYnj-M"
+const token = ""
     
 app.use((req, res, next) => {
   // Insertar el token en el header de cada respuesta
